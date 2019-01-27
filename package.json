@@ -1,0 +1,43 @@
+{
+  "name": "boilerplate-dashboard-reacy",
+  "description": "A boilerplate dashboard for Discord bots.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.0",
+    "@material-ui/icons": "^3.0.2",
+    "gatsby": "^2.0.76",
+    "gatsby-plugin-sass": "^2.0.7",
+    "node-sass": "^4.11.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-jss": "^8.6.1",
+    "typeface-roboto": "0.0.54"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.0.0",
+    "babel-preset-gatsby": "^0.1.6",
+    "eslint": "^5.12.1",
+    "eslint-config-gatsby-standard": "^2.1.1",
+    "gatsby-plugin-eslint": "^2.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.0.0",
+    "react-test-renderer": "^16.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Soumil07/react-boilerplate-dashboard"
+  },
+  "bugs": {
+    "url": "https://github.com/Soumil07/react-boilerplate-dashboard/issues"
+  }
+}

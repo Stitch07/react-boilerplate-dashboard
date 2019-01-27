@@ -1,0 +1,31 @@
+@import '__variables';
+
+.bot-img {
+    position: absolute;
+    left: 42%;
+    top: 13%;
+}
+
+.head {
+    position: absolute;
+    top: 55%;
+    left: 32%;
+    display: inline-block;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.btn-invite {
+    position: absolute;
+    left: 42%;
+    top: 350px;
+}
+
+.btn-support {
+    position: absolute;
+    left: 43%;
+    top: 350px;
+}
