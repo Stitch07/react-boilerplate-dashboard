@@ -13,7 +13,9 @@ Kick off your Discord bot dashboard development with this boilerplate dashboard 
 
 Start by cloning this repository and looking through `src/pages/`. Information regarding customizing specific pages/components should be in code comments.
 
-To start the dashboard in development mode, run `gatsby develop`.
+Install the gatsby CLI using `npm install -g gatsby-cli`. To start the dashboard in development mode, run `gatsby develop`.
+
+Some pages need an API running to connect the standalone dashboard to your bot. An example API will be provided soon, but it is easy to reverse-engineer it. Configure your API URL by making a `.env.development` file and adding `GATSBY_API_URL` to it.
 
 ## Like what you're looking at?
 
