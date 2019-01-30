@@ -45,6 +45,7 @@ class ButtonAppBar extends Component {
   logout = () => {
     localStorage.removeItem('user');
     this.setState({ user: null, anchorEl: null });
+    window.location.href = "/"
   }
 
   async componentDidMount() {

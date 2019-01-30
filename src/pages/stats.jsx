@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import withRoot from '../withRoot.jsx';
 import api from '../meta/api';
-import { Typography, withStyles, Paper, Table, TableHead, TableRow, TableCell, TableBody, Fade } from '@material-ui/core';
+import { Typography, withStyles, Paper, Table, TableHead, TableRow, TableCell, TableBody, Fade, LinearProgress } from '@material-ui/core';
 import Navbar from '../components/Navbar.jsx';
 
 const styles = theme => ({
@@ -35,7 +35,7 @@ const styles = theme => ({
     cell: {
         color: 'black',
         fontSize: '20px'
-    }
+    },
 })
 
 class StatsPage extends Component {
@@ -59,6 +59,7 @@ class StatsPage extends Component {
         if (loading) {
             return (
             <div className="div">
+                <LinearProgress />
                 <Navbar />
                 <Fade in={loading} timeout={1000}>
                     <Typography variant="h3" className={classes.loading}>Loading stats...</Typography>
@@ -70,7 +71,10 @@ class StatsPage extends Component {
         return (
             <div className="div">
             <Navbar />
+            <Fade in={true} timeout={1000}>
             <Typography variant="h3" color="primary" className={classes.loading} style={{left: '44%'}}>Statistics</Typography>
+            </Fade>
+            <Fade in={true} timeout={1000}>
             <Paper className={classes.root}>
               <Table className={classes.table}>
                 <TableHead>
@@ -94,7 +98,9 @@ class StatsPage extends Component {
                 </TableBody>
               </Table>
             </Paper>
+            </Fade>
 
+            <Fade in={true} timeout={1000}>
             <Paper className={classes.root2}>
             <Table className={classes.table}>
                 <TableHead>
@@ -118,6 +124,7 @@ class StatsPage extends Component {
                 </TableBody>
               </Table>
             </Paper>
+            </Fade>
             </div>
         )
     }
