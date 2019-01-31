@@ -31,7 +31,7 @@ class Dashboard extends Component {
                 {user.guilds.filter(g => g.userCanManage).map(guild => {
                     const icon = this.getIcon(guild);
                     return <Chip style={{backgroundColor: '#2C2F33', marginTop: '30px'}}
-                        avatar={icon}></Chip>
+                        avatar={icon} onClick={() => this.redirect(guild)}></Chip>
                 })}
                 </div>
                 </center>
@@ -41,8 +41,12 @@ class Dashboard extends Component {
 
     getIcon = guild => {
         const style = { height: '50px', width: '50px' }
-       if (guild.iconURL) return <Avatar src={guild.iconURL} style={style} />
-       return <Avatar style={style}>{guild.name.split(' ').map(w => w[0].toUpperCase())}</Avatar>
+        if (guild.iconURL) return <Avatar src={guild.iconURL} style={style} />
+        return <Avatar style={style}>{guild.name.split(' ').map(w => w[0].toUpperCase())}</Avatar>
+    }
+
+    redirect = guild => {
+        window.location.href = `/dashboard/${guild.id}`;
     }
 }
 
